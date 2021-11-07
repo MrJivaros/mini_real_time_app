@@ -29,7 +29,7 @@ export default function Orders() {
   
   useEffect(() => {
     const getOrders = async () => {
-      const response = await axios.get('http://localhost:4000/tickets')
+      const response = await axios.get('http://localhost:5000/orders')
       const ordersData = response.data;
       setOrders(ordersData)
     } 
